@@ -1,3 +1,3 @@
 # .dotfiles
 
-My set of config files adapted from @dudeofawesome
+My set of config files adapted from @[dudeofawesome](https://github.com/dudeofawesom)
