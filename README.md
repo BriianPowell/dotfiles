@@ -1,2 +1,3 @@
 # .dotfiles
-My set of config files
+
+My set of config files adapted from @dudeofawesome
