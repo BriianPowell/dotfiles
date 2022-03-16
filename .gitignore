@@ -10,8 +10,5 @@
 # Git
 .config/git
 
-# Heroku
-.config/heroku
-
 # macOS files
 .DS_Store
