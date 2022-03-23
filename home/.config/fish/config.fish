@@ -1,7 +1,17 @@
+source ~/.config/fish/tide.config.fish
+
+abbr -a reload source ~/.config/fish/config.fish
+
+abbr -a l ls -lha
+abbr -a lblk lsblk --output NAME,SIZE,RM,FSTYPE,FSUSE%,SERIAL,MOUNTPOINT
+
+set -Ux EDITOR vim
+
 function cl -d "cd into directory and ls"
   cd $argv
   ls
 end
+
 function mkdir -d "Create a directory and set CWD"
     command mkdir $argv
     if test $status = 0
@@ -14,14 +24,9 @@ function mkdir -d "Create a directory and set CWD"
         end
     end
 end
-abbr -a l ls -lha
-abbr -a lblk lsblk --output NAME,SIZE,RM,FSTYPE,FSUSE%,SERIAL,MOUNTPOINT
-abbr -a reload source ~/.config/fish/config.fish
 
 fish_add_path /usr/local/bin
 fish_add_path /usr/local/sbin
 fish_add_path /opt/homebrew/bin
 fish_add_path /usr/local/opt/avr-gcc@8/bin
 fish_add_path $HOME/.local/bin
-
-set -Ux EDITOR vim
