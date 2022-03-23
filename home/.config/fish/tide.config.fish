@@ -60,9 +60,9 @@ set -U tide_node_icon \u2b22
 
 set -U tide_os_bg_color 444444
 set -U tide_os_color EEEEEE
-set -U tide_os_icon \uf303
+set -U tide_os_icon (_tide_detect_os)
 
-set -U tide_php_bg_color 444444
+set -U tide_php_bg_color 44444
 set -U tide_php_color 617CBE
 set -U tide_php_icon \ue608
 
