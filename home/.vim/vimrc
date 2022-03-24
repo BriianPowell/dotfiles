@@ -12,7 +12,7 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'dracula_pro/vim', { 'name', 'dracula_pro' }
+Plugin 'dracula_pro/vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
