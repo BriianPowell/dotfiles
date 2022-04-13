@@ -5,7 +5,7 @@ function _tide_detect_os_no_hex
         case darwin
             printf %s\n  # from apple.com header
         case freebsd openbsd dragonfly
-            printf %s\n  FFFFFF AB2B28 # https://freebsdfoundation.org/about-us/about-the-foundation/project/
+            printf %s\n  # https://freebsdfoundation.org/about-us/about-the-foundation/project/
         case linux
             _tide_detect_os_no_hex_linux_cases /etc/os-release ID ||
                 _tide_detect_os_no_hex_linux_cases /etc/os-release ID_LIKE ||
@@ -27,39 +27,39 @@ function _tide_detect_os_no_hex_linux_cases -a file key
     # It was just too bright otherwise
     switch $value_processed
         case alpine
-            printf %s\n  FFFFFF 0D597F # from alpine logo
+            printf %s\n  # from alpine logo
         case arch
-            printf %s\n  1793D1 4D4D4D # from arch wiki header
+            printf %s\n  # from arch wiki header
         case centos
-            printf %s\n  000000 D4D4D4 # https://wiki.centos.org/ArtWork/Brand/Logo, monochromatic
+            printf %s\n  # https://wiki.centos.org/ArtWork/Brand/Logo, monochromatic
         case debian
-            printf %s\n  C70036 D4D4D4 # from debian logo https://www.debian.org/logos/openlogo-nd-100.png
+            printf %s\n  # from debian logo https://www.debian.org/logos/openlogo-nd-100.png
         case devuan
-            printf %s\n  $defaultColor # logo is monochromatic
+            printf %s\n  # logo is monochromatic
         case elementary
-            printf %s\n  000000 D4D4D4 # https://elementary.io/brand, encouraged to be monochromatic
+            printf %s\n  # https://elementary.io/brand, encouraged to be monochromatic
         case fedora
-            printf %s\n  FFFFFF 294172 # from logo https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png
+            printf %s\n  # from logo https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png
         case gentoo
-            printf %s\n  FFFFFF 54487A # https://wiki.gentoo.org/wiki/Project:Artwork/Colors
+            printf %s\n  # https://wiki.gentoo.org/wiki/Project:Artwork/Colors
         case mageia
-            printf %s\n  FFFFFF 262F45 # https://wiki.mageia.org/en/Artwork_guidelines
+            printf %s\n  # https://wiki.mageia.org/en/Artwork_guidelines
         case manjaro
-            printf %s\n  FFFFFF 35BF5C # from https://gitlab.manjaro.org/artwork/branding/logo/-/blob/master/logo.svg
+            printf %s\n  # from https://gitlab.manjaro.org/artwork/branding/logo/-/blob/master/logo.svg
         case mint
-            printf %s\n  FFFFFF 69B53F # extracted from https://linuxmint.com/web/img/favicon.ico
+            printf %s\n  # extracted from https://linuxmint.com/web/img/favicon.ico
         case nixos
-            printf %s\n  FFFFFF 5277C3 # https://github.com/NixOS/nixos-artwork/tree/master/logo
+            printf %s\n  # https://github.com/NixOS/nixos-artwork/tree/master/logo
         case opensuse tumbleweed
-            printf %s\n  73BA25 173f4f # https://en.opensuse.org/openSUSE:Artwork_brand
+            printf %s\n  # https://en.opensuse.org/openSUSE:Artwork_brand
         case raspbian
-            printf %s\n  FFFFFF A22846 # https://static.raspberrypi.org/files/Raspberry_Pi_Visual_Guidelines_2020.pdf
+            printf %s\n  # https://static.raspberrypi.org/files/Raspberry_Pi_Visual_Guidelines_2020.pdf
         case sabayon
-            printf %s\n  $defaultColor # Can't find colors, and they are rebranding anyway
+            printf %s\n  # Can't find colors, and they are rebranding anyway
         case slackware
-            printf %s\n  $defaultColor # Doesn't really have a logo, and the colors are too close to PWD blue anyway
+            printf %s\n  # Doesn't really have a logo, and the colors are too close to PWD blue anyway
         case ubuntu
-            printf %s\n  E95420 D4D4D4 # https://design.ubuntu.com/brand/
+            printf %s\n  # https://design.ubuntu.com/brand/
         case '*'
             return 1
     end
