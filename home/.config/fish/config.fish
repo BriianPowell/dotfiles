@@ -9,8 +9,8 @@ set -U fish_greeting
 set -Ux EDITOR vim
 
 function cl -d "cd into directory and ls"
-  cd $argv
-  ls
+    cd $argv
+    ls
 end
 
 function mkdir -d "Create a directory and set CWD"
@@ -32,3 +32,5 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /usr/local/opt/avr-gcc@8/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.rbenv/bin
+
+kubectl completion fish | source
