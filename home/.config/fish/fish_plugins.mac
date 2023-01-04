@@ -6,3 +6,4 @@ oh-my-fish/plugin-osx
 dudeofawesome/plugin-node-binpath
 jorgebucaran/autopair.fish
 lilyball/nix-env.fish
+mibmo/fish-kubectl-aliases
