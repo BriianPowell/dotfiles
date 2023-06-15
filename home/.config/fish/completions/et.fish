@@ -1,1 +1,1 @@
-complete -c et -f -w "ssh"
+complete -c et -f -w ssh
