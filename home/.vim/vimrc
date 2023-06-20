@@ -2,7 +2,11 @@ set nocompatible
 filetype off " required
 
 " set shell to bash for compatibility with fish
-set shell=/bin/bash
+if stridx($HOME,"Users") > 0
+  set shell=/bin/bash
+else
+  set shell=/run/current-system/sw/bin/bash
+fi
 
 packadd! dracula_pro
 
