@@ -6,7 +6,7 @@ if stridx($HOME,"Users") > 0
   set shell=/bin/bash
 else
   set shell=/run/current-system/sw/bin/bash
-fi
+endif
 
 packadd! dracula_pro
 
