@@ -32,3 +32,4 @@ fish_add_path /usr/local/sbin
 fish_add_path /opt/homebrew/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.rbenv/bin
+fish_add_path $HOME/.krew/bin
