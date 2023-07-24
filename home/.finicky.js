@@ -17,12 +17,20 @@ module.exports = {
       browser: 'Google Chrome',
     },
     {
+      match: ['teams.microsoft.com/*'],
+      browser: '/Applications/Microsoft Teams.app'
+    },
+    {
+      match: ['*.slack.com/*'],
+      browser: '/Applications/Slack.app'
+    },
+    {
       match: ['*.zoom.us/j/*'],
       browser: '/Applications/zoom.us.app',
     },
     {
       match: ['music.apple.com/*'],
-      browser: '/System/Applications/Spotify.app',
+      browser: '/System/Applications/Music.app',
     },
     {
       match: ['open.spotify.com/*'],
