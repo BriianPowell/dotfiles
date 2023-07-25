@@ -4,24 +4,26 @@ module.exports = {
   defaultBrowser: 'Firefox',
   handlers: [
     {
+      match: finicky.matchHostnames(['music.apple.com', 'geo.music.apple.com']),
+      browser: 'Music',
+      url: ({ url }) => ({...url, protocol: 'itmss'}),
+    },
+    {
       // Open apple.com urls in Safari
-      match: ['apple.com/*', 'apple.com', '*.apple.com/*', '*.apple.com'],
+      match: finicky.matchHostnames('apple.com'),
       browser: 'Safari',
     },
     {
-      // Open *.google.com urls in Google Chrome
-      match: [
-        'meet.google.com/*', // match google.com subdomains
-        'meet.google.com',
-      ],
+      match: finicky.matchHostnames('meet.google.com'),
       browser: 'Google Chrome',
     },
     {
-      match: ['teams.microsoft.com/*'],
-      browser: '/Applications/Microsoft Teams.app'
+      match: finicky.matchHostnames('teams.microsoft.com'),
+      browser: '/Applications/Microsoft Teams.app',
+      url: ({url}) => ({...url, protocol: 'msteams'})
     },
     {
-      match: ['*.slack.com/*'],
+      match: finicky.matchHostnames('*.slack.com'),
       browser: '/Applications/Slack.app'
     },
     {
@@ -29,12 +31,8 @@ module.exports = {
       browser: '/Applications/zoom.us.app',
     },
     {
-      match: ['music.apple.com/*'],
-      browser: '/System/Applications/Music.app',
-    },
-    {
-      match: ['open.spotify.com/*'],
-      browser: '/Applications/Spotify.app',
+      match: finicky.matchHostnames('open.spotify.com'),
+      browser: 'Spotify',
     },
   ],
 };
