@@ -9,6 +9,8 @@ abbr -a lblk lsblk --output NAME,SIZE,RM,FSTYPE,FSUSE%,SERIAL,MOUNTPOINT
 set -U fish_greeting
 set -Ux EDITOR vim
 
+pyenv init - | source
+
 function cl -d "cd into directory and ls"
     cd $argv
     ls
