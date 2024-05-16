@@ -1,8 +1,6 @@
 source ~/.config/fish/tide.config.fish
-source ~/.config/fish/completions/kubectl.fish
 
 abbr -a reload source ~/.config/fish/config.fish
-
 abbr -a l ls -lha
 abbr -a lblk lsblk --output NAME,SIZE,RM,FSTYPE,FSUSE%,SERIAL,MOUNTPOINT
 
@@ -11,6 +9,7 @@ set -Ux EDITOR vim
 set -Ux PYENV_ROOT $HOME/.pyenv
 
 pyenv init - | source
+kubectl completion fish | source
 
 function cl -d "cd into directory and ls"
     cd $argv
