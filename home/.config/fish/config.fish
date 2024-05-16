@@ -8,6 +8,7 @@ abbr -a lblk lsblk --output NAME,SIZE,RM,FSTYPE,FSUSE%,SERIAL,MOUNTPOINT
 
 set -U fish_greeting
 set -Ux EDITOR vim
+set -Ux PYENV_ROOT $HOME/.pyenv
 
 pyenv init - | source
 
@@ -35,3 +36,4 @@ fish_add_path /opt/homebrew/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.rbenv/bin
 fish_add_path $HOME/.krew/bin
+fish_add_path $PYENV_ROOT/bin
