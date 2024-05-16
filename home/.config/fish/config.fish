@@ -1,5 +1,5 @@
 source ~/.config/fish/tide.config.fish
-source ~/.config/fish/kubectl_aliases.fish
+source ~/.config/fish/completions/kubectl.fish
 
 abbr -a reload source ~/.config/fish/config.fish
 
