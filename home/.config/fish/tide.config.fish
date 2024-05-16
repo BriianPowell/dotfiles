@@ -118,6 +118,6 @@ set -U tide_vi_mode_icon_default DEFAULT
 set -U tide_vi_mode_icon_replace REPLACE
 set -U tide_vi_mode_icon_visual VISUAL
 
-set -U tide_virtual_env_bg_color 444444
-set -U tide_virtual_env_color 00AFAF
-set -U tide_virtual_env_icon \ue73c
+# set -U tide_virtual_env_bg_color 444444
+# set -U tide_virtual_env_color 00AFAF
+# set -U tide_virtual_env_icon \ue73c
