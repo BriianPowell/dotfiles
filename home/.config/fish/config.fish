@@ -8,6 +8,8 @@ set -U fish_greeting
 set -Ux EDITOR vim
 set -Ux PYENV_ROOT $HOME/.pyenv
 
+test -f ~/.config/fish/functions/.kubectl_aliases.fish && source ~/.config/fish/functions/.kubectl_aliases.fish
+
 pyenv init - | source
 kubectl completion fish | source
 
