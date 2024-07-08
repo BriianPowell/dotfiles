@@ -94,3 +94,8 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 let g:netrw_liststyle = 3
+
+augroup ColorSchemeSwitch
+  autocmd!
+  autocmd VimEnter,ColorScheme * if &background == 'dark' \| colorscheme dracula_pro \| else \| colorscheme alucard \| endif
+augroup END
