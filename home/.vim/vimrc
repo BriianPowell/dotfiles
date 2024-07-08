@@ -25,7 +25,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'prettier/vim-prettier'
 Plugin 'preservim/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'jonstoler/werewolf.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -85,17 +84,10 @@ set t_Co=256
 syntax enable
 try
   let g:dracula_colorterm = 0
-  colorscheme dracula_pro
+  colorscheme alucard
 catch
   " Couldn't load colorscheme
 endtry
-
-let g:werewolf_day_themes = ['alucard']
-let g:werewolf_night_themes = ['dracula_pro']
-" default 8, use 24 hour format
-let g:werewolf_day_start = 8
-" default 20, 24 hour format
-let g:werewolf_day_end = 20
 
 let g:airline_powerline_fonts = 1
 set laststatus=2
