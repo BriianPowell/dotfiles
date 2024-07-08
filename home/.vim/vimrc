@@ -90,7 +90,7 @@ catch
   " Couldn't load colorscheme
 endtry
 
-let g:werewolf_day_themes = ['dracula_pro_alucard']
+let g:werewolf_day_themes = ['alucard']
 let g:werewolf_night_themes = ['dracula_pro']
 " default 8, use 24 hour format
 let g:werewolf_day_start = 8
