@@ -8,11 +8,7 @@ else
   set shell=/run/current-system/sw/bin/bash
 endif
 
-" For packages, versions 8.2 and later will autoload `start` packages
-" correctly even in your vimrc.
-if v:version < 802
-    packadd! dracula
-endif
+packadd! dracula
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -81,9 +77,10 @@ filetype plugin indent on
 autocmd filetype python set expandtab
 
 set t_Co=256
-syntax enable
+syntax on
 try
   let g:dracula_colorterm = 0
+  let g:airline_theme='dracula_pro'
   colorscheme dracula_pro
 catch
   " Couldn't load colorscheme
