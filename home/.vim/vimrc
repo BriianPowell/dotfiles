@@ -95,6 +95,18 @@ set laststatus=2
 
 let g:netrw_liststyle = 3
 
+" s: indicates script variable
+" need to call this to populate `shell_error`
+let s:theme = system('defaults read -g AppleInterfaceStyle >/dev/null 2>&1')
+
+" v: indicates vim variable
+" if shell_error is set, macOS must have been in light mode
+if v:shell_error
+    set background = light
+else
+    set background = dark
+endif
+
 augroup ColorSchemeSwitch
   autocmd!
   autocmd VimEnter,ColorScheme * if &background == 'dark' | colorscheme dracula_pro | else | colorscheme alucard | endif
