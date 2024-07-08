@@ -35,3 +35,7 @@ vault = "Personal"
 [[ssh-keys]]
 item = "Server SSH Key"
 vault = "Personal"
+
+[[ssh-keys]]
+item = "Alcon - SSH Key"
+vault = "Personal"
