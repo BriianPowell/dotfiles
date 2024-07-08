@@ -8,7 +8,11 @@ else
   set shell=/run/current-system/sw/bin/bash
 endif
 
-packadd! dracula
+" For packages, versions 8.2 and later will autoload `start` packages
+" correctly even in your vimrc.
+if v:version < 802
+    packadd! dracula
+endif
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
