@@ -14,14 +14,6 @@ const general = {
   // useTabs: // configured in .editorconfig->indent_size
   // tabWidth: // configured in .editorconfig->indent_style
   // endOfLine: // configured in .editorconfig->end_of_line
-  overrides: [
-    {
-      files: '**/*.ts',
-      options: {
-        parser: 'typescript',
-      },
-    },
-  ],
 };
 
 module.exports = {

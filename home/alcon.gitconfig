@@ -1,0 +1,7 @@
+[user]
+  email = brian.powell@alcon.com
+  name = Brian Powell
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGhMCnXJXZW20HyF4IwE5j9GOPUiKpgujFYibMgCk/Vx
+
+[url "ssh://git@alcon/"]
+  insteadOf = https://github.com/

@@ -1,0 +1,26 @@
+[user]
+  email = brian@powell.place
+  name = Brian Powell
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPKXvyAnsaJWov91AOHE+dzxKNXbBOSDWBnDEHa13gex
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[commit]
+  gpgsign = true
+
+[core]
+  excludesfile = $HOME/.gitignore
+  editor = vim
+
+[pull]
+  rebase = true
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[includeIf "gitdir:$HOME/GitHub/McKinsey/alcon/"]
+  path = $HOME/GitHub/McKinsey/alcon/.gitconfig

@@ -1,0 +1,9 @@
+[user]
+  email = brian@powell.place
+  name = Brian Powell
+
+[core]
+  editor = vim
+
+[pull]
+  rebase = true
