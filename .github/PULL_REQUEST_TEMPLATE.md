@@ -6,9 +6,9 @@
 
 <!--- List down the changes you have made in detail --->
 
-### 🎟️ Jira Ticket or GitHub Issue
+### 🎟️ GitHub Issue
 
-<!--- Please link the Jira ticket or GitHub Issue --->
+<!--- Please link the GitHub Issue if applicable --->
 
 ### 🚨 Type of change
 
