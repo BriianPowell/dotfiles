@@ -29,11 +29,11 @@
 # More examples can be found here:
 #  https://developer.1password.com/docs/ssh/agent/config
 [[ssh-keys]]
-item = "Personal Private Key"
+item = "Personal - SSH Key"
 vault = "Personal"
 
 [[ssh-keys]]
-item = "Server SSH Key"
+item = "Servers - SSH Key"
 vault = "Personal"
 
 [[ssh-keys]]
