@@ -12,6 +12,7 @@ test -f ~/.config/fish/functions/.kubectl_aliases.fish && source ~/.config/fish/
 
 pyenv init - | source
 kubectl completion fish | source
+atuin init fish | source
 
 function cl -d "cd into directory and ls"
     cd $argv
