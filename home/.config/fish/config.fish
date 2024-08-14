@@ -39,3 +39,4 @@ fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.rbenv/bin
 fish_add_path $HOME/.krew/bin
 fish_add_path $PYENV_ROOT/bin
+fish_add_path /run/current-system/sw/bin
