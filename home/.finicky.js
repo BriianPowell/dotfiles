@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       // Open apple.com urls in Safari
-      match: finicky.matchHostnames('apple.com'),
+      match: finicky.matchHostnames(['apple.com', 'www.apple.com', 'icloud.com', 'www.icloud.com']),
       browser: 'Safari',
     },
     {
