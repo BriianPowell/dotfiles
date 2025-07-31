@@ -14,8 +14,8 @@ function cl -d "cd into directory and ls"
     # Change directory and list contents
     if cd "$target_dir"
         # Use ls with colors and better formatting
-        if command -v exa >/dev/null
-            exa --long --tree --group-directories-first
+        if command -v eza >/dev/null
+            eza --long --all --group-directories-first
         else
             ls -lha
         end

@@ -39,8 +39,8 @@ function mkdir -d "Create a directory and set CWD"
             cd "$target_dir"
 
             # Optional: list contents of parent to show the new directory
-            if command -v exa >/dev/null
-                exa --long --tree --group-directories-first
+            if command -v eza >/dev/null
+                eza --long --all --group-directories-first
             else
                 ls -lha
             end
