@@ -1,7 +1,7 @@
-function git_clone_cd -d 'Clone a git repository and cd into it'
+function gitclcd -d 'Clone a git repository and cd into it'
     # Check if URL is provided
     if test (count $argv) -eq 0
-        echo "Usage: git_clone_cd <repository-url> [directory-name]"
+        echo "Usage: gitclcd <repository-url> [directory-name]"
         return 1
     end
 
