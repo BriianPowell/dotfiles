@@ -13,7 +13,7 @@
   gpgsign = true
 
 [core]
-  excludesfile = $HOME/.gitignore
+  excludesfile = ~/.gitignore
   editor = vim
 
 [pull]
