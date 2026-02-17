@@ -25,6 +25,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'prettier/vim-prettier'
 Plugin 'preservim/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'vimpostor/vim-lumen'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -95,19 +96,6 @@ set laststatus=2
 
 let g:netrw_liststyle = 3
 
-" s: indicates script variable
-" need to call this to populate `shell_error`
-let s:theme = system('defaults read -g AppleInterfaceStyle >/dev/null 2>&1')
-
-" v: indicates vim variable
-" if shell_error is set, macOS must have been in light mode
-if v:shell_error
-    set background=light
-else
-    set background=dark
-endif
-
-augroup ColorSchemeSwitch
-  autocmd!
-  autocmd VimEnter,ColorScheme * if &background == 'dark' | colorscheme dracula_pro | else | colorscheme alucard | endif
-augroup END
+" vim-lumen automatically switches between light/dark colorschemes
+let g:lumen_light_colorscheme = 'alucard'
+let g:lumen_dark_colorscheme = 'dracula_pro'
