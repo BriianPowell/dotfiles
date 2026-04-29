@@ -21,6 +21,3 @@
 
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/
-
-[includeIf "gitdir:~/GitHub/McKinsey/alcon/"]
-  path = ~/GitHub/McKinsey/alcon/.gitconfig
