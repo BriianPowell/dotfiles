@@ -1,5 +1,3 @@
-source ~/.config/fish/tide.config.fish
-
 abbr -a reload source ~/.config/fish/conf.d/01-dotfiles.fish
 abbr -a l ls -lha
 abbr -a lblk lsblk --output NAME,SIZE,RM,FSTYPE,FSUSE%,SERIAL,MOUNTPOINT
